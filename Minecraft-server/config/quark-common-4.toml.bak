@@ -1,0 +1,202 @@
+
+[general]
+	"'q' Button on the Right" = false
+	#
+	#Allowed values: (0,)
+	"Piston Push Limit" = 12
+	#
+	#Set to true to make the quark big worldgen features such as stone clusters or underground biomes generate as spheres rather than unique shapes. It's faster, but won't look as cool
+	"Use Fast Worldgen" = false
+	"Enable 'q' Button" = true
+	#
+	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
+	"Ignored Screens" = ["blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "com.blakebr0.extendedcrafting.client.screen.EliteTableScreen", "com.blakebr0.extendedcrafting.client.screen.EliteAutoTableScreen", "com.blakebr0.extendedcrafting.client.screen.UltimateTableScreen", "com.blakebr0.extendedcrafting.client.screen.UltimateAutoTableScreen", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen"]
+	"Use Anti Overlap" = true
+	#
+	#Quark messes with the Stonecutter to allow any item that can be used in it to be shift clicked in. Set this to false to turn it off.
+	"Hack Stonecutter Shift Click" = true
+	#
+	#Enables quark network profiling features. Do not enable this unless requested to.
+	"Enable Network Profiling" = false
+	#
+	#Quark replaces the Piston logic to allow for its piston features to work. If you're having troubles, try turning this off.
+	"Use Piston Logic Replacement" = true
+	#
+	#Set to true if you need to find the class name for a screen that's causing problems
+	"Print Screen Classnames" = false
+	#
+	#Blocks that Quark should treat as Shulker Boxes.
+	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
+	#
+	#Set to true to enable a system that debugs quark's worldgen features. This should ONLY be used if you're asked to by a dev.
+	"Enable Worldgen Watchdog" = false
+	#
+	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
+	"Interpret Shulker Box Like Blocks" = true
+
+[categories]
+	Building = true
+	Automation = true
+	Oddities = true
+	Tweaks = true
+	Experimental = true
+	Mobs = true
+	Tools = true
+	Management = true
+	World = true
+	Client = true
+
+[automation]
+	Chute = true
+	"Iron Rod" = true
+	"Weather Sensor" = true
+	"Ender Watcher" = true
+	"Endermites Form Shulkers" = true
+	"Chains Connect Blocks" = true
+	"Color Slime" = true
+	"Dispensers Place Blocks" = true
+	"Redstone Circuit" = true
+	"Chain Linkage" = true
+	Gravisand = true
+	"Metal Buttons" = true
+	"Obsidian Plate" = true
+	"Pistons Move Tile Entities" = true
+	"Feeding Trough" = true
+
+	[automation.dispensers_place_blocks]
+		Blacklist = ["minecraft:water", "minecraft:lava", "minecraft:fire"]
+
+	[automation.chain_linkage]
+		#
+		#Can vehicle-linking chains be used for crafting chain armor?
+		"Crafts Armor" = true
+
+	[automation.redstone_circuit]
+		"Enable Inductor" = true
+		"Enable Randomizer" = true
+
+	[automation.metal_buttons]
+		"Enable Iron" = true
+		"Enable Gold" = true
+
+	[automation.endermites_form_shulkers]
+		Chance = 0.005
+
+	[automation.pistons_move_tile_entities]
+		"Render Blacklist" = ["psi:programmer", "botania:starfield"]
+		"Movement Blacklist" = ["minecraft:spawner", "integrateddynamics:cable", "randomthings:blockbreaker", "minecraft:ender_chest", "minecraft:enchanting_table", "minecraft:trapped_chest", "quark:spruce_trapped_chest", "quark:birch_trapped_chest", "quark:jungle_trapped_chest", "quark:acacia_trapped_chest", "quark:dark_oak_trapped_chest", "endergetic:bolloom_bud"]
+		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
+
+	[automation.color_slime]
+		"Change Name" = true
+
+	[automation.feeding_trough]
+		#
+		#The chance (between 0 and 1) for an animal to enter love mode when eating from the trough
+		#Allowed values: (0,1]
+		"Love Chance" = 0.333333333
+		#
+		#How long, in game ticks, between animals being able to eat from the trough
+		#Allowed values: [1,)
+		Cooldown = 30
+		#
+		#The maximum amount of animals allowed around the trough's range for an animal to enter love mode
+		"Max Animals" = 32
+		Range = 10.0
+
+[building]
+	"Duskbound Blocks" = true
+	"Bamboo Mat" = true
+	"Cobblestone Bricks" = true
+	"More Brick Types" = true
+	"Gold Bars" = true
+	"Soul Sandstone" = true
+	"Burn Vines" = true
+	"Quilted Wool" = true
+	"Compressed Blocks" = true
+	Stools = true
+	Thatch = true
+	"Variant Chests" = true
+	"Variant Ladders" = true
+	Hedges = true
+	"Vertical Slabs" = true
+	Shingles = true
+	"Nether Brick Fence Gate" = true
+	"Item Frames" = true
+	"Stained Planks" = true
+	"Wooden Posts" = true
+	"Leaf Carpet" = true
+	"Lit Lamp" = true
+	"Vertical Planks" = true
+	Midori = true
+	"Tie Leads To Fences" = true
+	"Shallow Dirt" = true
+	"More Stone Variants" = true
+	"Framed Glass" = true
+	"Tallow And Candles" = true
+	Turf = true
+	"Paper Decor" = true
+	Rope = true
+	"Iron Plates" = true
+	"Sturdy Stone" = true
+	"More Potted Plants" = true
+	Grate = true
+	"Variant Bookshelves" = true
+
+	[building.rope]
+		"Enable Dispenser Behavior" = true
+		#
+		#Set to true to allow ropes to move Tile Entities even if Pistons Push TEs is disabled.
+		#Note that ropes will still use the same blacklist.
+		"Force Enable Move Tile Entities" = false
+
+	[building.more_stone_variants]
+		"Enable Bricks" = true
+		"Enable Pillar" = true
+		"Enable Chiseled Bricks" = true
+		"Enable Pavement" = true
+
+	[building.thatch]
+		#
+		#Allowed values: [0,1]
+		"Fall Damage Multiplier" = 0.5
+
+	[building.variant_ladders]
+		"Change Names" = true
+		"Enable Iron Ladder" = true
+
+	[building.compressed_blocks]
+		"Enable Cocoa Bean Sack" = true
+		"Enable Cactus Block" = true
+		"Enable Apple Crate" = true
+		"Charcoal Block and Blaze Lantern Stay On Fire Forever" = true
+		"Enable Bonded Rabbit Hide" = true
+		"Enable Charcoal Block" = true
+		"Enable Gunpowder Sack" = true
+		"Enable Potato Crate" = true
+		"Enable Stick Block" = true
+		"Enable Carrot Crate" = true
+		"Enable Beetroot Crate" = true
+		"Enable Nether Wart Sack" = true
+		"Enable Chorus Fruit Block" = true
+		"Enable Blaze Lantern" = true
+		"Enable Bamboo Block" = true
+		"Enable Berry Sack" = true
+		"Enable Golden Apple Crate" = true
+		"Enable Sugar Cane Block" = true
+		"Enable Bonded Leather" = true
+		#
+		#Allowed values: [0,)
+		"Blaze Lantern Fuel Time" = 24000
+		#
+		#Allowed values: [0,)
+		"Charcoal Block Fuel Time" = 16000
+		#
+		#Allowed values: [0,)
+		"Stick Block Fuel Time" = 900
+
+	[building.variant_chests]
+		"Replace Worldgen Chests" = true
+		#
+		#Chests to put in each structure. The format per entry is "structure=chest", where "structure" is a structure ID, and "chest" is a block ID, which must correspond to a standard chest block.
+		"Structure Chests" = ["minecraft:village_plains=quark:oak_chest", "minecraft:igloo=quark:spruce_chest", "minecraft:village_snowy=quark:spruce_chest", "minecraft:village_taiga=quark:spruce_chest", "minecraft:desert_pyramid=quark:birch_chest", "minecraft:jungle_pyramid=quark:jungle_chest", "minecraft:village_desert=quark:jungle_chest", "minecraft:village_savanna=quark:acacia_chest", "minecraft:mansion=quark:dark_oak_chest", "minecraft:pillager_outpost=quark:dark_oak_chest", "minecraft:ruined_portal=quark:crimson_chest", "minecraft:bastion_remnant=quark:crimson_chest", "minecraft:fortress=quark:nether_brick_chest", "minecraft:endcity=quark:purpur_chest", "bettermineshafts:mineshaft=quark:oak_chest", "co
